@@ -53,11 +53,9 @@
   display: none !important;
 }
 
-/* Hide engagement counts */
-.x-clean-view [data-testid="retweet"] span[data-testid],
-.x-clean-view [data-testid="like"] span[data-testid],
-.x-clean-view button[data-testid="retweet"] > div > span,
-.x-clean-view button[data-testid="like"] > div > span {
+/* Hide retweet and like buttons entirely */
+.x-clean-view button[data-testid="retweet"],
+.x-clean-view button[data-testid="like"] {
   display: none !important;
 }
 

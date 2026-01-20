@@ -17,12 +17,6 @@ function applyClasses(element) {
   element.classList.toggle('x-hide-videos', settings.hideVideos);
 }
 
-/**
- * Check if on bookmarks page
- */
-function isBookmarksPage() {
-  return window.location.pathname.includes('/i/bookmarks');
-}
 
 /**
  * Extract tweet data from article element
@@ -116,10 +110,9 @@ function addCopyButton(article) {
 }
 
 /**
- * Add copy buttons to bookmarks page
+ * Add copy buttons to all tweets
  */
-function setupBookmarks() {
-  if (!isBookmarksPage()) return;
+function addCopyButtons() {
   document.querySelectorAll('article').forEach(addCopyButton);
 }
 
@@ -130,7 +123,7 @@ function observeDOM() {
   let timeout;
   const observer = new MutationObserver(() => {
     clearTimeout(timeout);
-    timeout = setTimeout(setupBookmarks, 100);
+    timeout = setTimeout(addCopyButtons, 100);
   });
   observer.observe(document.body, { childList: true, subtree: true });
 }
@@ -140,7 +133,7 @@ function observeDOM() {
  */
 function init() {
   applyClasses(document.body);
-  setupBookmarks();
+  addCopyButtons();
   observeDOM();
 }
 
