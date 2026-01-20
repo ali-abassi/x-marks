@@ -42,8 +42,7 @@
 .x-clean-view nav[aria-label="Primary"] a[href="/i/premium"],
 .x-clean-view nav[aria-label="Primary"] a[href*="/creators"],
 .x-clean-view nav[aria-label="Primary"] a[href*="/communities"],
-.x-clean-view nav[aria-label="Primary"] button[aria-label="More menu items"],
-.x-clean-view a[href="/compose/post"] {
+.x-clean-view nav[aria-label="Primary"] button[aria-label="More menu items"] {
   display: none !important;
 }
 
