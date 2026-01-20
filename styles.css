@@ -1,0 +1,81 @@
+/* X Marks - Clean View Styles */
+
+/* Hide entire right sidebar */
+.x-clean-view [data-testid="sidebarColumn"] {
+  display: none !important;
+}
+
+/* Hide promoted tweets / ads */
+.x-clean-view article:has([data-testid="promotedIndicator"]) {
+  display: none !important;
+}
+
+/* Hide Who to Follow */
+.x-clean-view [aria-label="Who to follow"] {
+  display: none !important;
+}
+
+/* Hide Trending */
+.x-clean-view [aria-label="Timeline: Trending now"] {
+  display: none !important;
+}
+
+/* Hide Grok */
+.x-clean-view a[href="/i/grok"],
+.x-clean-view button[aria-label*="Grok"] {
+  display: none !important;
+}
+
+/* Hide left nav items except Profile and Bookmarks */
+.x-clean-view nav[aria-label="Primary"] a[href="/home"],
+.x-clean-view nav[aria-label="Primary"] a[href="/explore"],
+.x-clean-view nav[aria-label="Primary"] a[href="/notifications"],
+.x-clean-view nav[aria-label="Primary"] a[href*="/chat"],
+.x-clean-view nav[aria-label="Primary"] a[href="/i/grok"],
+.x-clean-view nav[aria-label="Primary"] a[href="/i/premium"],
+.x-clean-view nav[aria-label="Primary"] a[href*="/creators"],
+.x-clean-view nav[aria-label="Primary"] a[href*="/communities"],
+.x-clean-view nav[aria-label="Primary"] button[aria-label="More menu items"],
+.x-clean-view a[href="/compose/post"] {
+  display: none !important;
+}
+
+/* Hide extra channel tabs - keep only For you and Following */
+.x-clean-view [role="tablist"] [role="presentation"]:nth-child(n+3) {
+  display: none !important;
+}
+
+.x-clean-view [aria-label="Previous"],
+.x-clean-view [aria-label="Next"] {
+  display: none !important;
+}
+
+/* Hide retweet and like counts */
+.x-clean-view [data-testid="retweet"] span[data-testid],
+.x-clean-view [data-testid="like"] span[data-testid],
+.x-clean-view button[data-testid="retweet"] > div > span,
+.x-clean-view button[data-testid="like"] > div > span {
+  display: none !important;
+}
+
+/* Center main content */
+.x-clean-view main {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+/* Make left sidebar narrower */
+.x-clean-view header[role="banner"] {
+  width: auto !important;
+  min-width: auto !important;
+}
+
+/* Hide video posts - target both html and body since class may be on either */
+.x-hide-videos article:has([data-testid="videoPlayer"]),
+.x-hide-videos article:has([data-testid="videoComponent"]),
+.x-hide-videos article:has(video),
+html.x-hide-videos article:has([data-testid="videoPlayer"]),
+html.x-hide-videos article:has([data-testid="videoComponent"]),
+html.x-hide-videos article:has(video) {
+  display: none !important;
+}
