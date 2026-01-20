@@ -2,7 +2,9 @@
   "manifest_version": 3,
   "name": "X Marks",
   "version": "1.0.0",
-  "description": "Clean view for X",
+  "description": "Clean view for X/Twitter - hide clutter, widen tweets, remove videos",
+  "author": "Ali Abassi (https://github.com/ali-abassi)",
+  "homepage_url": "https://github.com/ali-abassi/x-marks",
   "permissions": [
     "storage",
     "activeTab"
