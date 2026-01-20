@@ -29,7 +29,7 @@ function saveSettings() {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       const url = tabs[0]?.url || '';
       if (url.includes('x.com') || url.includes('twitter.com')) {
-        chrome.tabs.sendMessage(tabs[0].id, { type: 'SETTINGS_UPDATED', ...settings });
+        chrome.tabs.sendMessage(tabs[0].id, { type: 'SETTINGS_UPDATED', ...settings }).catch(() => {});
       }
     });
   });
