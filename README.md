@@ -1,37 +1,31 @@
 # X Marks
 
-A Chrome extension for a cleaner X/Twitter experience.
+Clean up your X/Twitter feed.
 
-## Features
+## What it does
 
-**Clean View**
-- Hides right sidebar (trending, who to follow, ads)
-- Hides promoted tweets
-- Hides Grok
-- Simplifies left nav to just Profile and Bookmarks
-- Shows only "For You" and "Following" tabs
-- Hides engagement counts (retweets, likes)
-- Widens tweet content area
+**Clean View** removes everything except what matters:
+- No right sidebar
+- No ads or promoted tweets
+- No Grok
+- No trending
+- No "who to follow"
+- Just Profile and Bookmarks in the nav
 
-**Hide Videos**
-- Removes all posts containing videos from your feed
+**Hide Videos** removes all video posts from your feed.
 
-## Installation
+**Copy Bookmarks** adds a copy button to each bookmarked tweet. One click copies the author, content, and URL to your clipboard — ready to paste into Claude, ChatGPT, or wherever.
 
-1. Clone or download this repo
-2. Open Chrome and go to `chrome://extensions`
-3. Enable "Developer mode" (top right)
-4. Click "Load unpacked" and select the extension folder
-5. Pin the extension for easy access
+## Install
 
-## Usage
+Available on the [Chrome Web Store](https://chrome.google.com/webstore) as **X Marks**.
 
-Click the X Marks icon in your toolbar to toggle features on/off. Changes apply immediately.
+Or load manually:
+1. Download this repo
+2. Go to `chrome://extensions`
+3. Enable "Developer mode"
+4. Click "Load unpacked" and select the folder
 
 ## Author
 
 [Ali Abassi](https://github.com/ali-abassi)
-
-## License
-
-MIT

@@ -86,3 +86,35 @@ html.x-hide-videos article:has([data-testid="videoComponent"]),
 html.x-hide-videos article:has(video) {
   display: none !important;
 }
+
+/* =============================================================================
+   COPY BUTTON (Bookmarks page)
+   ============================================================================= */
+
+.x-marks-copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: rgb(113, 118, 123);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.x-marks-copy-btn:hover {
+  background: rgba(29, 155, 240, 0.1);
+  color: rgb(29, 155, 240);
+}
+
+.x-marks-copy-btn.copied {
+  color: rgb(0, 186, 124);
+  background: rgba(0, 186, 124, 0.1);
+}
+
+.x-marks-copy-btn svg {
+  pointer-events: none;
+}
