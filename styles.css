@@ -53,12 +53,6 @@
   display: none !important;
 }
 
-/* Hide retweet and like counts (keep icons) */
-.x-clean-view button[data-testid="retweet"] span,
-.x-clean-view button[data-testid="like"] span {
-  display: none !important;
-}
-
 /* Center main content */
 .x-clean-view main {
   display: flex !important;
